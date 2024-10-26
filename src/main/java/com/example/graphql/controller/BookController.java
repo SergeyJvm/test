@@ -24,6 +24,6 @@ public class BookController {
 
     @SchemaMapping
     public Optional<Author> author(Book book){
-        return Author.getAuthorById(book.id());
+        return Author.getAuthorById(book.authorId());
     }
 }
