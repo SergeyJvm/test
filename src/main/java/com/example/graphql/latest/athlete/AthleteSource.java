@@ -1,12 +1,12 @@
-package com.example.graphql.athlete;
+package com.example.graphql.latest.athlete;
 
 
-import com.example.graphql.athlete.dto.Activity;
-import com.example.graphql.athlete.dto.Athlete;
-import com.example.graphql.athlete.dto.Comment;
-import com.example.graphql.athlete.dto.Rowing;
-import com.example.graphql.athlete.dto.Run;
-import com.example.graphql.athlete.dto.Swim;
+import com.example.graphql.latest.athlete.dto.Activity;
+import com.example.graphql.latest.athlete.dto.Athlete;
+import com.example.graphql.latest.athlete.dto.Comment;
+import com.example.graphql.latest.athlete.dto.Rowing;
+import com.example.graphql.latest.athlete.dto.Run;
+import com.example.graphql.latest.athlete.dto.Swim;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -16,8 +16,8 @@ import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.function.Function;
 
-import static com.example.graphql.athlete.FakerUtils.aBoolean;
-import static com.example.graphql.athlete.FakerUtils.anInt;
+import static com.example.graphql.latest.athlete.FakerUtils.aBoolean;
+import static com.example.graphql.latest.athlete.FakerUtils.anInt;
 import static java.util.stream.Collectors.toMap;
 
 public abstract class AthleteSource {
@@ -134,7 +134,7 @@ public abstract class AthleteSource {
 
     private static <T> T delay(Callable<T> callable) {
         try {
-////            Thread.sleep(10);
+            Thread.sleep(100);
             return callable.call();
         }
         catch (Exception ex) {

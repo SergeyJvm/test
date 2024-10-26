@@ -1,4 +1,4 @@
-package com.example.graphql.athlete.dto;
+package com.example.graphql.latest.athlete.dto;
 
 public interface Activity {
     Long id();

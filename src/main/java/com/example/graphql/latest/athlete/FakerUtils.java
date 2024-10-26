@@ -1,4 +1,4 @@
-package com.example.graphql.athlete;
+package com.example.graphql.latest.athlete;
 
 import java.util.Random;
 

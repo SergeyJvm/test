@@ -2,7 +2,10 @@ type Query{
     books: [Book]
     bookById(id: Int): Book
     athlete(id: ID) : Athlete
+    search(text: String): [SearchItem!]!
 }
+
+union SearchItem = Club | Athlete
 
 type Book {
     id: ID
@@ -14,6 +17,12 @@ type Book {
 type Author {
     id: ID
     name: String
+}
+
+type Club {
+    id: ID!
+    name: String!
+    totalMembers: Int!
 }
 
 type Athlete {

@@ -1,9 +1,9 @@
-package com.example.graphql.athlete.controller;
+package com.example.graphql.latest.athlete.controller;
 
-import com.example.graphql.athlete.AthleteSource;
-import com.example.graphql.athlete.dto.Activity;
-import com.example.graphql.athlete.dto.Athlete;
-import com.example.graphql.athlete.dto.Comment;
+import com.example.graphql.latest.athlete.AthleteSource;
+import com.example.graphql.latest.athlete.dto.Activity;
+import com.example.graphql.latest.athlete.dto.Athlete;
+import com.example.graphql.latest.athlete.dto.Comment;
 import java.util.List;
 
 import lombok.extern.slf4j.Slf4j;
