@@ -1,12 +1,11 @@
 package com.example.graphql.controller;
 
-import com.example.graphql.dto.Book;
+import com.example.graphql.book.controller.BookController;
+import com.example.graphql.book.dto.Book;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.graphql.GraphQlTest;
-import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.test.tester.GraphQlTester;
-import static org.junit.jupiter.api.Assertions.*;
 
 @GraphQlTest(BookController.class)
 class BookControllerTest {

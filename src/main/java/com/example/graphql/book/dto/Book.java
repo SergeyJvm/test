@@ -1,4 +1,4 @@
-package com.example.graphql.dto;
+package com.example.graphql.book.dto;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,6 +1,7 @@
 type Query{
     books: [Book]
     bookById(id: Int): Book
+    athlete(id: ID) : Athlete
 }
 
 type Book {
@@ -13,4 +14,43 @@ type Book {
 type Author {
     id: ID
     name: String
+}
+
+type Athlete {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    activities: [Activity!]!
+}
+
+interface Activity {
+    id: ID!
+    description: String!
+    comments: [Comment!]
+}
+
+type Run implements Activity {
+    id: ID!
+    description: String!
+    comments: [Comment!]
+    elevation: Int  # In meters.
+}
+
+type Swim implements Activity {
+    id: ID!
+    description: String!
+    comments: [Comment!]
+    laps: Int
+    indoor: Boolean
+}
+
+type Rowing implements Activity {
+    id: ID!
+    description: String!
+    comments: [Comment!]
+    split: Int  # Seconds per 500 meters.
+}
+
+type Comment {
+    text: String!
 }

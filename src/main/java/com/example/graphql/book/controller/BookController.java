@@ -1,7 +1,7 @@
-package com.example.graphql.controller;
+package com.example.graphql.book.controller;
 
-import com.example.graphql.dto.Author;
-import com.example.graphql.dto.Book;
+import com.example.graphql.book.dto.Author;
+import com.example.graphql.book.dto.Book;
 import java.util.List;
 import java.util.Optional;
 import lombok.extern.slf4j.Slf4j;
